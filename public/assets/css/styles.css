@@ -1,0 +1,229 @@
+
+/* FONT IMPORTS */
+/*  <img src= "<?= ASSETS ?>/img/home-page/pexels-zukiman-mohamad-22185.jpg" class="home-top-img img-fluid" alt="homepage"> */
+@font-face{
+    font-family: 'Rubik-Bold';
+    src: url('../fonts/rubik/Rubik-Bold.ttf');
+}
+@font-face{
+    font-family: 'Rubik-Regular';
+    src: url('../fonts/rubik/Rubik-Regular.ttf');
+}
+
+
+
+
+/* ============================ SITEWIDE ============================ */
+html, body { height: 100%; }
+
+/* HEADER */
+.navbar-brand{  /*@B*/
+    font-family: 'Rubik-Bold';
+    color:#FFFFFF;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    font-size: 25px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.nav-item{  /*@B*/
+    font-family: 'Rubik-Regular';
+    padding-left: 1%;
+    padding-right:1%;
+    font-size: 1rem;
+}
+
+.ms-auto{  /* @B */
+    margin-left: 30% !important;
+
+}
+
+/* ============================ HOME-PAGE ============================ */
+
+/* PAGE WIDE */
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* TOP IMAGE */
+
+/* 	 Although the name is absolute, if an element is defined as absolute, 
+then the element will always have the position which is relative with respect 
+to its nearest neighbor element instead of the viewpoint or page. 
+If there is no neighbor, it will be positioned relative to the body of the document
+ and its movement is in liaise with scrolling of the page */
+
+ /* TL;DR: Absolute will respect the container if theres no container it will respect the body */
+
+.head-img-container{
+
+    position:relative;
+    
+}
+
+.home-top-img{
+    object-fit: cover;
+    height: 50%;
+}
+
+.top-img-text-bold{
+    font-family: 'Rubik-Bold';
+    color:black;
+    position:absolute;
+    font-size: 4vw;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-40%, -40%);
+    text-shadow: -6px 8px 20px rgb(20, 20, 20);
+}
+
+.top-img-text-regular{
+    font-family: 'Rubik-Regular';
+    color:black;
+    position:absolute;
+    font-size: 1vw;
+    position: absolute;
+    top: 40%;
+    left: 21%;
+    transform: translate(-40%, -40%);
+}
+
+/* ABOUT US */
+
+.about-us-container{
+    background-color: black; 
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Constraint for image shadow */
+
+}
+
+.column-h-row{
+padding:2%;
+display: flex;
+}
+.column-h-column{
+    display: flex;
+    flex-direction: column;
+
+ }
+
+.home-about-us-img{
+    width: 35%;
+    z-index: 1;
+}
+
+.home-about-us-img-shdw{
+    width: 25%;
+    position: absolute;
+    z-index: 0;
+    opacity: 80%;
+    bottom:5%;
+    right: 65%;
+    filter: hue-rotate(283deg);
+}
+
+.description-header-bold-b{
+    font-family: 'Rubik-Bold';
+    color:white;
+    font-size: 2vw;
+    text-align: right;
+}
+.description-regular-b{
+    font-family: 'Rubik-Regular';
+    text-align:right;
+    font-size: 1vw;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+
+/* OUR SERVICES */
+
+.our-services-container{
+    background-color: #FFC70F; 
+    color: black;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10% 10%;
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Constraint for image shadow */
+    flex-direction: column;
+
+}
+
+.description-header-bold-y{
+    font-family: 'Rubik-Bold';
+    color:black;
+    font-size: 2vw;
+    text-align: left;
+}
+.description-regular-y{
+    font-family: 'Rubik-Regular';
+    text-align:left;
+    font-size: 1vw;
+}
+
+.services-column-h-row{
+    padding:2%;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+.our-services-img{
+    width: 475px;
+    height: 408px;
+}
+
+.services-description-header-bold-b{
+    position:absolute;
+}
+
+/* WHY US */
+.why-us-container{
+    background-color: black; 
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5% 12%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative; /* Constraint for image shadow */
+}
+
+.description-header-bold-b-l{
+    font-family: 'Rubik-Bold';
+    color:white;
+    font-size: 2vw;
+    text-align: left;
+}
+.description-regular-b-l{
+    font-family: 'Rubik-Regular';
+    text-align:left;
+    font-size: 1vw;
+}
+
+
+.home-about-us-img-shdw-l{
+    width: 24%;
+    position: absolute;
+    z-index: 0;
+    opacity: 80%;
+    bottom:6%;
+    left: 64%;
+    filter: hue-rotate(123deg);
+}
