@@ -17,20 +17,25 @@
 html, body { height: 100%; }
 
 /* HEADER */
+
+.navbar {  /*@B*/
+background-color: black;
+}
+
 .navbar-brand{  /*@B*/
     font-family: 'Rubik-Bold';
     color:#FFFFFF;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
     font-size: 25px;
     text-decoration: none;
     white-space: nowrap;
 }
-.nav-item{  /*@B*/
+.nav-item a{  /*@B*/
     font-family: 'Rubik-Regular';
     padding-left: 1%;
     padding-right:1%;
     font-size: 1rem;
+    color: white;
+    text-decoration:none;
 }
 
 .ms-auto{  /* @B */
@@ -38,6 +43,12 @@ html, body { height: 100%; }
 
 }
 
+/* FOOTER */
+
+.bg-black{
+    background-color: black !important;
+    color: white !important;
+}
 /* ============================ HOME-PAGE ============================ */
 
 /* PAGE WIDE */
@@ -180,16 +191,22 @@ display: flex;
 .services-column-h-row{
     padding:2%;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     position: relative;
 }
 .our-services-img{
-    width: 475px;
-    height: 408px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .services-description-header-bold-b{
-    position:absolute;
+    width: 25%;
+    font-family: 'Rubik-Bold';
+    color:black;
+    font-size: 1.25vw;
+    bottom:5%;
+    text-align: center;
 }
 
 /* WHY US */
@@ -227,3 +244,5 @@ display: flex;
     left: 64%;
     filter: hue-rotate(123deg);
 }
+
+

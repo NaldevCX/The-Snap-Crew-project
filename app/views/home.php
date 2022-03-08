@@ -37,6 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 </div>
 
+
 <div class="our-services-container">
     <div class= "column-h-column">
     <div class="description-header-bold-y">Our services</div>
@@ -48,11 +49,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     <img src= "<?= ASSETS ?>\img\home-page\pexels-jc-romero-3236765.jpg" class="our-services-img column-h-row" alt="Picture of Girl Portrait">
     <img src= "<?= ASSETS ?>\img\home-page\pexels-athena-2983401.jpg" class="our-services-img column-h-row" alt="Picture of a Camera">
     <img src= "<?= ASSETS ?>\img\home-page\pexels-avonne-stalling-3916019.jpg" class="our-services-img column-h-row" alt="Picture of a Wed couple">
+
+    </div>
+    <div class= "services-column-h-row">
     <div class="services-description-header-bold-b">Portrait</div>
     <div class="services-description-header-bold-b">Equipment</div>
     <div class="services-description-header-bold-b">Wedding</div>
     </div>
-
 </div>
 
 
